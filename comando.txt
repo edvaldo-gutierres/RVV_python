@@ -1,5 +1,5 @@
  acessar a pasta onde se encontra o arquivo python e execute o comando:
- python -m streamlit run seu_script.py
+ python -m streamlit run RVV.py
 
 
  documentação:
