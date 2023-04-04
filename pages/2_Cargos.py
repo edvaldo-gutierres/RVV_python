@@ -43,3 +43,20 @@ if  add_selectbox == "Cadastrar":
             columns=['Codigo do Cargo', 'Nome do Cargo', 'Status do Cargo', 'Nivel Hieraquia'])
 
         st.dataframe(df)
+
+
+
+if  add_selectbox == "Consultar":
+
+    with st.expander("Lista de Cargos cadastrados"):
+        Cargo_List = []
+
+        for item in CargoController.Consultar():
+            Cargo_List.append([item.codigo_cargo, item.nome_cargo, item.status_cargo, item.nivel])
+
+        df = pd.DataFrame(
+            Cargo_List,
+            columns=['Codigo do Cargo', 'Nome do Cargo', 'Status do Cargo', 'Nível do Cargo'])
+        df['Índice'] = df.index + 1
+        df = df.set_index('Índice')
+        st.dataframe(df)

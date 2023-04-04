@@ -71,5 +71,6 @@ if  add_selectbox == "Consultar":
         df = pd.DataFrame(
             Departament_List,
             columns=['Codigo do Departamento', 'Nome do Departamento', 'Status do Departamento'])
-
+        df['Índice'] = df.index + 1
+        df = df.set_index('Índice')
         st.dataframe(df)

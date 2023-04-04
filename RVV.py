@@ -15,7 +15,7 @@ st.write("# Página Inicial RVV 👋")
 st.image(image, caption='Remuneração Variável de Vendas')
 
 st.markdown("""
-    Repositório referente ao microfundamento Projeto de Banco de Dados Relacional da PUC Minas 2023.
+    Aplicação referente ao microfundamento Projeto de Banco de Dados Relacional da PUC Minas 2023.
     
     Banco de dados para um sistema de gerenciamento de cálculo de remuneração variável de vendas (RVV)
      em empresas de vendas, considerando como pilares de cálculos a meta e o realizado de indicadores 
