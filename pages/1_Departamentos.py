@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 import Controllers.DepartamentoController as DepartamentoController
 import models.departamento as departamento;
-import  time
+
 
 st.markdown("# Departamentos ️")
 st.sidebar.markdown("###  Escolha uma opção! ")
@@ -10,7 +10,7 @@ st.sidebar.markdown("###  Escolha uma opção! ")
 # Using object notation
 add_selectbox = st.sidebar.selectbox(
     "Qual operação você deseja realizar?",
-    ("Consultar", "Cadastrar", "Alterar | Excluir")
+    ("Consultar", "Cadastrar", "Alterar", "Excluir")
 )
 
 
@@ -48,11 +48,16 @@ if  add_selectbox == "Cadastrar":
 
 
 
-if  add_selectbox == "Alterar | Excluir":
+if  add_selectbox == "Excluir":
 
     st.subheader(":blue[_Lista de Departamentos Cadastrados_]")
-    DepartamentoController.Alterar_Excluir()
+    DepartamentoController.Excluir_Form()
 
+
+if  add_selectbox == "Alterar":
+
+    st.subheader(":blue[_Lista de Departamentos Cadastrados_]")
+    DepartamentoController.Atualizar_Form()
 
 
 if  add_selectbox == "Consultar":
