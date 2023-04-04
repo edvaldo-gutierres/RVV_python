@@ -15,6 +15,8 @@ add_selectbox = st.sidebar.selectbox(
 
 if add_selectbox == "Consultar":
 
+    st.subheader(":blue[_Consultar Indicadores_]")
+
     with st.expander("Lista de Indicadores cadastrados"):
         Indicador_List = []
 

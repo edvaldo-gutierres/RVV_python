@@ -48,6 +48,8 @@ if  add_selectbox == "Cadastrar":
 
 if  add_selectbox == "Consultar":
 
+    st.subheader(":blue[_Consultar Cargos_]")
+
     with st.expander("Lista de Cargos cadastrados"):
         Cargo_List = []
 
@@ -60,3 +62,15 @@ if  add_selectbox == "Consultar":
         df['Índice'] = df.index + 1
         df = df.set_index('Índice')
         st.dataframe(df)
+
+
+if add_selectbox == "Alterar":
+
+    st.subheader(":blue[_Lista de Cargos Cadastrados_]")
+    CargoController.Atualizar_Form()
+
+
+if add_selectbox == "Excluir":
+
+    st.subheader(":blue[_Lista de Cargos Cadastrados_]")
+    CargoController.Excluir_Form()

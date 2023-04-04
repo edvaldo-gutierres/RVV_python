@@ -62,6 +62,8 @@ if  add_selectbox == "Alterar":
 
 if  add_selectbox == "Consultar":
 
+    st.subheader(":blue[_Consultar Departamento_]")
+
     with st.expander("Lista de Departamentos cadastrados"):
         Departament_List = []
 

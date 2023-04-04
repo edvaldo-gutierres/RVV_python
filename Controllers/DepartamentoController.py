@@ -1,5 +1,6 @@
 import services.database as db;
 import models.departamento as dpto;
+import streamlit as st
 
 
 def Incluir(Departamento):
@@ -69,7 +70,6 @@ def Excluir_Form():
             st.write(':red[_Departamento excluído com sucesso!!!_]')
 
 
-import streamlit as st
 
 def Atualizar_Form():
 

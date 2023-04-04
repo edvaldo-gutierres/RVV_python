@@ -15,6 +15,8 @@ add_selectbox = st.sidebar.selectbox(
 
 if add_selectbox == "Consultar":
 
+    st.subheader(":blue[_Consultar Metas_]")
+
     with st.expander("Lista de Metas cadastradas"):
         Meta_List = []
 
