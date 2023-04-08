@@ -1,7 +1,7 @@
 
 class Indicador:
     def __init__(self, codigo_indicador, nome_indicador, codigo_departamento, codigo_cargo, peso_indicador,
-                inicio_vigencia, final_vigencia):
+                inicio_vigencia, final_vigencia=None):
         self.codigo_indicador = codigo_indicador
         self.nome_indicador = nome_indicador
         self.codigo_departamento = codigo_departamento
